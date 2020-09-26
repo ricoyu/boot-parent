@@ -1,0 +1,36 @@
+spring:
+  datasource:
+    druid:
+      url: jdbc:mysql://localhost:3306/tuling?useSSL=false&allowPublicKeyRetrieval=true&useLegacyDatetimeCode=false&useCompression=true&useUnicode=true&autoReconnect=true&autoReconnectForPools=true&failOverReadOnly=false
+      username: rico
+      password: 123456
+      initial-size: 5
+      min-idle: 5
+      max-active: 20
+      max-wait: 60000
+      validation-query: SELECT 1
+      validation-query-timeout: 60000
+      test-while-idle: true
+      test-on-borrow: false
+      test-on-return: false
+      keep-alive: false
+      filters: stat,wall
+      time-between-eviction-runs-millis: 60000
+      min-evictable-idle-time-millis: 1800000
+      pool-prepared-statements: false
+      max-pool-prepared-statement-per-connection-size: -1
+    jpa:
+      database-platform: org.hibernate.dialect.MySQL8Dialect
+      hibernate:
+        naming:
+          implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+          physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+      properties:
+        hibernate:
+          ddl-auto: none
+          format_sql: true
+      show-sql: true
+      
+  jackson:
+    serialization:
+      indent_output: true

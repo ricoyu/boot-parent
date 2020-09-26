@@ -1,0 +1,32 @@
+# 应用服务 WEB 访问端口
+server.port: 8443
+http.port: 8080
+# Actuator Web 访问端口
+#management.server.port: 8081
+
+spring:
+  application:
+    name: boot-tomcat
+  thymeleaf:
+    cache: false
+    enabled: true
+    prefix: classpath:/templates/
+    suffix: .html
+
+server:
+  tomcat:
+    max-connections: 8292
+    max-threads: 200
+    accept-count: 1000
+  error:
+    whitelabel:
+      enabled: true
+#  servlet:
+#    context-path: /prop-customize
+  ssl:
+    enabled: true
+    protocol: TLS
+    key-store-password: 123456
+    key-store-type: PKCS12
+    key-store: classpath:keystore/rico.p12
+    key-alias: rico

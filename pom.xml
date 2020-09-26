@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.1.16.RELEASE</version>
+    </parent>
+    <groupId>com.loserico</groupId>
+    <artifactId>boot-parent</artifactId>
+    <packaging>pom</packaging>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>boot-parent</name>
+    <description>Parent project for Spring Boot</description>
+
+    <modules>
+        <module>hello-boot</module>
+        <module>boot-profiles</module>
+        <module>boot-properties</module>
+        <module>boot-webjars</module>
+        <module>boot-javaee</module>
+        <module>boot-jdbc</module>
+        <module>boot-jpa</module>
+        <module>boot-mybatis</module>
+        <module>boot-mybatisplus</module>
+        <module>boot-rabbitmq</module>
+        <module>boot-elasticsearch</module>
+        <module>boot-logging</module>
+        <module>boot-weixin</module>
+        <module>boot-kafka</module>
+        <module>boot-kafka-streaming</module>
+        <module>boot-kafka-batch-consumer</module>
+        <module>boot-commandline-websocket</module>
+        <module>boot-locale</module>
+    </modules>
+
+    <properties>
+        <java.version>1.8</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>javax.inject</groupId>
+            <artifactId>javax.inject</artifactId>
+            <version>1</version>
+        </dependency>
+    </dependencies>
+    
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.loserico</groupId>
+                <artifactId>loser-spring-boot-security-starter</artifactId>
+                <version>1.13</version>
+            </dependency>
+            <dependency>
+                <groupId>com.loserico</groupId>
+                <artifactId>loser-spring-boot-starter</artifactId>
+                <version>1.13</version>
+            </dependency>
+            <dependency>
+                <groupId>com.loserico</groupId>
+                <artifactId>loser-spring-boot-web-starter</artifactId>
+                <version>1.13</version>
+            </dependency>
+            <dependency>
+                <groupId>com.loserico</groupId>
+                <artifactId>loser-spring-boot-web-starter</artifactId>
+                <version>1.13</version>
+            </dependency>
+            <dependency>
+                <groupId>com.loserico</groupId>
+                <artifactId>loser-spring-boot-mongo-starter</artifactId>
+                <version>1.13</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+        
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <encoding>UTF-8</encoding>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                    <compilerVersion>1.8</compilerVersion>
+                    <compilerArgument>-parameters</compilerArgument>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

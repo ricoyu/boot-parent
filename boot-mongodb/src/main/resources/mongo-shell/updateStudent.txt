@@ -1,0 +1,2 @@
+{'result': 'fail'}
+{$set: {'marks.english': 59, 'marks.maths': 59}}
