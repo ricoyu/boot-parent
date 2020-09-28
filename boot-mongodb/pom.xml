@@ -45,7 +45,6 @@
         <dependency>
             <groupId>com.loserico</groupId>
             <artifactId>loser-spring-boot-mongo-starter</artifactId>
-            <version>1.13</version>
         </dependency>
         
         <dependency>

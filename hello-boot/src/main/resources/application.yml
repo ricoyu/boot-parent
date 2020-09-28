@@ -1,0 +1,4 @@
+server:
+  port: 8081
+  max-http-header-size: 20000000
+  max-http-post-size: 20000000

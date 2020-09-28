@@ -62,7 +62,6 @@
         <dependency>
             <groupId>com.loserico</groupId>
             <artifactId>commons-spring</artifactId>
-            <version>4.6.7</version>
         </dependency>
 
 

@@ -57,12 +57,10 @@
         <dependency>
             <groupId>com.loserico</groupId>
             <artifactId>loser-web</artifactId>
-            <version>4.6.7</version>
         </dependency>
         <dependency>
             <groupId>com.loserico</groupId>
             <artifactId>loser-json</artifactId>
-            <version>4.6.7</version>
         </dependency>
     </dependencies>
 

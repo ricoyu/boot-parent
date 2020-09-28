@@ -106,7 +106,6 @@
         <dependency>
             <groupId>com.loserico</groupId>
             <artifactId>loser-spring-boot-starter</artifactId>
-            <version>1.1</version>
         </dependency>
     </dependencies>
 

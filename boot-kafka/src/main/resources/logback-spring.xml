@@ -23,6 +23,7 @@
     <logger name="com.loserico.security.api" level="DEBUG"/>
     <logger name="org.springframework.boot.context.logging.ClasspathLoggingApplicationListener" level="ERROR"/>
     <logger name="org.springframework.security" level="DEBUG"/>
+    <logger name="org.apache.kafka.common.metrics.Metrics" level="INFO"/>
 
     <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
