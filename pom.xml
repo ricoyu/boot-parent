@@ -33,6 +33,7 @@
         <module>boot-kafka-batch-consumer</module>
         <module>boot-commandline-websocket</module>
         <module>boot-locale</module>
+        <module>yelling-app-data-generator</module>
     </modules>
 
     <properties>
