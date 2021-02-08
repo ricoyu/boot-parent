@@ -33,7 +33,7 @@ public class EmployeePropertyController {
 	@GetMapping("/{property}/{value}")
 	public Result findByProperty(@PathVariable String property, @PathVariable LocalDateTime value) {
 		List<Employee> employees = employeePropertyService.findByProperty(Employee.class, property, value);
-		return Results.success().results(employees);
+		return Results.success().result(employees);
 	}
 	
 }

@@ -17,13 +17,13 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @version 1.0
  */
 @SpringBootApplication
-public class KafkaStreamingApp implements CommandLineRunner {
+public class KafkaStreamingApplication implements CommandLineRunner {
 	
 	@Autowired
 	private KafkaStreamsYellingApp kafkaStreamsYellingApp;
 	
 	public static void main(String[] args) {
-		SpringApplication.run(KafkaStreamingApp.class, args);
+		SpringApplication.run(KafkaStreamingApplication.class, args);
 	}
 	
 	@Override

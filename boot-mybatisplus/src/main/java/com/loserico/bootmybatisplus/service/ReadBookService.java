@@ -15,5 +15,5 @@ import com.loserico.bootmybatisplus.entity.ReadBook;
  */
 public interface ReadBookService {
 	
-	Page<ReadBook> queryBookByName(String name, Page<?> page);
+	Page<ReadBook> queryBookByName(String name, Page<ReadBook> page);
 }

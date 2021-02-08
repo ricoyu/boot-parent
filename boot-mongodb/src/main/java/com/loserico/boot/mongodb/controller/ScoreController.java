@@ -31,6 +31,6 @@ public class ScoreController {
 	@GetMapping("/statistic")
 	public Result statistic() {
 		List<ScoreVO> scores = scoreService.scoreStatistic();
-		return Results.success().results(scores);
+		return Results.success().result(scores);
 	}
 }

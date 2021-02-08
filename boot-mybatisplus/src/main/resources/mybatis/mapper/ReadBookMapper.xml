@@ -7,6 +7,6 @@
 
 
     <select id="queryBookByName" resultType="com.loserico.bootmybatisplus.entity.ReadBook">
-        select * from read_book_pd where name like concat("%", #{name}, "%")
+        select * from read_book_pd
     </select>
 </mapper>

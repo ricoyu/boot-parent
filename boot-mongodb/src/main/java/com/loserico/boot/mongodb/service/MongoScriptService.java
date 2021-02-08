@@ -1,5 +1,7 @@
 package com.loserico.boot.mongodb.service;
 
+import com.loserico.boot.mongodb.entity.SandboxMgr;
+
 /**
  * <p>
  * Copyright: (C), 2020-08-24 15:12
@@ -13,4 +15,8 @@ package com.loserico.boot.mongodb.service;
 public interface MongoScriptService {
 	
 	public Object scriptQuery(String script);
+	
+	public long update(String status);
+	
+	public SandboxMgr updateAndGet();
 }

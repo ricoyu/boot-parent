@@ -29,7 +29,7 @@ public class StudentController {
 	
 	@GetMapping("/by-grade")
 	public Result queryStudents() {
-		return Results.success().results(studentService.queryStudents());
+		return Results.success().result(studentService.queryStudents());
 	}
 	
 	@PostMapping("/update")

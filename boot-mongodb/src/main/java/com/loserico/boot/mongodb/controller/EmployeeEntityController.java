@@ -40,19 +40,19 @@ public class EmployeeEntityController {
 	@PostMapping("/paging")
 	public Result pagingEmployee(@RequestBody Page page) {
 		List<Employee> employees = employeeService.queryEmployee(null, page);
-		return Results.success().page(page).results(employees);
+		return Results.success().page(page).result(employees);
 	}
 	
 	@PostMapping("/table-paging")
 	public Result pagingTableEmployee(Employee queryvo, Page page) {
 		List<Employee> employees = employeeService.queryEmployee(queryvo, page);
-		return Results.success().page(page).results(employees);
+		return Results.success().page(page).result(employees);
 	}
 	
 	@GetMapping("/list")
 	public Result findAll() {
 		List<Employee> employees = employeeService.findAll();
-		return Results.success().results(employees);
+		return Results.success().result(employees);
 	}
 	
 	@PostMapping("/page")
@@ -60,7 +60,7 @@ public class EmployeeEntityController {
 		List<Employee> employees = employeeService.findAll(page);
 		return Results.success()
 				.page(page)
-				.results(employees);
+				.result(employees);
 	}
 	
 	@PostMapping("")
@@ -72,7 +72,7 @@ public class EmployeeEntityController {
 	@PostMapping("/batch/save")
 	public Result batchSave(@RequestBody List<Employee> employees) {
 		employeeService.saveAll(employees);
-		return Results.success().results(employees);
+		return Results.success().result(employees);
 	}
 	
 	@GetMapping("/{id}")
@@ -84,7 +84,7 @@ public class EmployeeEntityController {
 	@GetMapping("/batch/{ids}")
 	public Result getEmployees(@PathVariable String ids) {
 		List<Employee> employees = employeeService.findByIds(ids.split("\\s*,\\s*"));
-		return Results.success().results(employees);
+		return Results.success().result(employees);
 	}
 	
 	@PostMapping("/{id}")

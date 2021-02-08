@@ -32,12 +32,12 @@ public class EmployeeRepositoryController {
 	@GetMapping("/all")
 	public Result findAll() {
 		List<Employee> employees = employeeRepository.findAll();
-		return Results.success().results(employees);
+		return Results.success().result(employees);
 	}
 	
 	@GetMapping("/name/{name}")
 	public Result findByName(@PathVariable String name) {
 		List<Employee> employees = employeeRepository.findEmployeeByName(name);
-		return Results.success().results(employees);
+		return Results.success().result(employees);
 	}
 }

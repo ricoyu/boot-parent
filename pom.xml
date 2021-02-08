@@ -27,6 +27,7 @@
         <module>boot-rabbitmq</module>
         <module>boot-elasticsearch</module>
         <module>boot-logging</module>
+        <module>boot-log4j2</module>
         <module>boot-weixin</module>
         <module>boot-kafka</module>
         <module>boot-kafka-streaming</module>
@@ -34,6 +35,9 @@
         <module>boot-commandline-websocket</module>
         <module>boot-locale</module>
         <module>yelling-app-data-generator</module>
+        <module>boot-aop</module>
+        <module>boot-schedule</module>
+        <module>boot-validation</module>
     </modules>
 
     <properties>
@@ -55,87 +59,87 @@
             <dependency>
                 <groupId>com.loserico</groupId>
                 <artifactId>loser-spring-boot-security-starter</artifactId>
-                <version>1.13</version>
+                <version>1.20</version>
             </dependency>
             <dependency>
                 <groupId>com.loserico</groupId>
                 <artifactId>loser-spring-boot-starter</artifactId>
-                <version>1.13</version>
+                <version>1.20</version>
             </dependency>
             <dependency>
                 <groupId>com.loserico</groupId>
                 <artifactId>loser-spring-boot-web-starter</artifactId>
-                <version>1.13</version>
+                <version>1.20</version>
             </dependency>
             <dependency>
                 <groupId>com.loserico</groupId>
                 <artifactId>loser-spring-boot-web-starter</artifactId>
-                <version>1.13</version>
+                <version>1.20</version>
             </dependency>
             <dependency>
                 <groupId>com.loserico</groupId>
                 <artifactId>loser-spring-boot-mongo-starter</artifactId>
-                <version>1.13</version>
+                <version>1.20</version>
             </dependency>
             <dependency>
                 <groupId>com.loserico</groupId>
                 <artifactId>commons-lang</artifactId>
-                <version>4.7.13</version>
+                <version>4.7.20</version>
             </dependency>
             <dependency>
                 <groupId>com.loserico</groupId>
                 <artifactId>commons-spring</artifactId>
-                <version>4.7.13</version>
+                <version>4.7.20</version>
             </dependency>
             <dependency>
                 <groupId>com.loserico</groupId>
                 <artifactId>loser-orm</artifactId>
-                <version>4.7.13</version>
+                <version>4.7.16</version>
             </dependency>
             <dependency>
                 <groupId>com.loserico</groupId>
                 <artifactId>loser-cache</artifactId>
-                <version>4.7.13</version>
+                <version>4.7.20</version>
             </dependency>
             <dependency>
                 <groupId>com.loserico</groupId>
                 <artifactId>loser-json</artifactId>
-                <version>4.7.13</version>
+                <version>4.7.20</version>
             </dependency>
             <dependency>
                 <groupId>com.loserico</groupId>
                 <artifactId>loser-codec</artifactId>
-                <version>4.7.13</version>
+                <version>4.7.20</version>
             </dependency>
             <dependency>
                 <groupId>com.loserico</groupId>
                 <artifactId>loser-networking</artifactId>
-                <version>4.7.13</version>
+                <version>4.7.20</version>
             </dependency>
             <dependency>
                 <groupId>com.loserico</groupId>
                 <artifactId>loser-web</artifactId>
-                <version>4.7.13</version>
+                <version>4.7.20</version>
             </dependency>
             <dependency>
                 <groupId>com.loserico</groupId>
                 <artifactId>loser-validation</artifactId>
-                <version>4.7.13</version>
+                <version>4.7.20</version>
             </dependency>
             <dependency>
                 <groupId>com.loserico</groupId>
                 <artifactId>loser-workbook</artifactId>
-                <version>4.7.13</version>
+                <version>4.7.20</version>
             </dependency>
             <dependency>
                 <groupId>com.loserico</groupId>
                 <artifactId>loser-mongo</artifactId>
-                <version>4.7.13</version>
+                <version>4.7.20</version>
             </dependency>
             <dependency>
                 <groupId>com.loserico</groupId>
                 <artifactId>loser-token-parser</artifactId>
-                <version>4.7.13</version>
+                <version>4.7.20</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

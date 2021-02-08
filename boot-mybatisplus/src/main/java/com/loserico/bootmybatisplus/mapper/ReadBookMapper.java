@@ -15,6 +15,5 @@ import com.loserico.bootmybatisplus.entity.ReadBook;
  * @version 1.0
  */
 public interface ReadBookMapper extends BaseMapper<ReadBook> {
-	
 	Page<ReadBook> queryBookByName(String name, Page<?> page);
 }

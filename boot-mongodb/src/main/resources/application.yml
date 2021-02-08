@@ -4,12 +4,13 @@ server:
 spring:
   data:
     mongodb:
+#      uri: mongodb://dbuser1:prodMongoDBpass@192.168.100.111:20017/honeypot
 #      uri: mongodb://localhost:27117/test?readPreference=secondaryPreferred&maxStalenessSeconds=120
 #      uri: mongodb://localhost:17017,localhost:17018,localhost:17019/test?replicaSet=loser&readPreference=secondaryPreferred&maxStalenessSeconds=120
 #      uri: mongodb://phantom:123456@localhost:27017/phantom
-#      uri: mongodb://localhost:27017/phantom
+      uri: mongodb://localhost:27017/phantom
 #      uri: mongodb://pUser:p$wD666@172.16.0.172:21017/phantom
-      uri: mongodb://192.168.100.104:27017/mydb
+#      uri: mongodb://192.168.100.104:27017/mydb
 loser:
   filter:
     repeated-read: true
