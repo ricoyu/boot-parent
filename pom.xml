@@ -24,11 +24,16 @@
         <module>boot-jpa</module>
         <module>boot-mybatis</module>
         <module>boot-mybatisplus</module>
+        <module>boot-mongodb</module>
         <module>boot-rabbitmq</module>
         <module>boot-elasticsearch</module>
         <module>boot-logging</module>
         <module>boot-log4j2</module>
         <module>boot-weixin</module>
+        <module>boot-tomcat</module>
+        <module>boot-websocket</module>
+        <module>boot-xss</module>
+        <module>boot-https</module>
         <module>boot-kafka</module>
         <module>boot-kafka-streaming</module>
         <module>boot-kafka-batch-consumer</module>
