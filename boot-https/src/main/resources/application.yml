@@ -1,0 +1,19 @@
+server:
+  ssl:
+    # The format used for the keystore. It could be set to JKS in case it is a JKS file
+    key-store-type: PKCS12
+    # The path to the keystore containing the certificate
+    key-store: classpath:keystore/rico.p12
+    # The password used to generate the certificate
+    key-store-password: 123456
+    # The alias mapped to the certificate
+    key-alias: rico
+    # Since we are using Spring Security enabled application, let's configure it to accept only HTTPS requests
+    enabled: true
+  port: 8443
+
+http.port: 8080
+#trust store location
+trust.store: classpath:keystore/rico.p12
+#trust store password
+trust.store.password: 123456

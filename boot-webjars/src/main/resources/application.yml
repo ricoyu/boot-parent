@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: Bootstrap Thymeleaf Spring Boot
+#  thymeleaf:
+#    cache: false
+#    enabled: true
+#    prefix: classpath:/templates/
+#    suffix: .html

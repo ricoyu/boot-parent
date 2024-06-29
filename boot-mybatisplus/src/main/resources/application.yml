@@ -1,0 +1,48 @@
+spring:
+  datasource:
+    druid:
+      url: jdbc:mysql://43.128.59.34:3306/tx_test?useSSL=false&allowPublicKeyRetrieval=true&useLegacyDatetimeCode=false&useCompression=true&useUnicode=true&autoReconnect=true&autoReconnectForPools=true&failOverReadOnly=false
+      username: rico
+      password: 123456
+      driver-class-name: com.mysql.jdbc.Driver
+      initial-size: 10
+      max-active: 100
+      min-idle: 4
+      max-wait: 60000
+      pool-prepared-statements: true
+      max-open-prepared-statements: 20
+      validation-query: SELECT 1 FROM DUAL
+      test-while-idle: true
+      test-on-borrow: false
+      test-on-return: false
+      time-between-eviction-runs-millis: 60000
+      min-evictable-idle-time-millis: 300000
+      
+      filter:
+        stat:
+          enabled: true
+          db-type: mysql
+          log-slow-sql: true
+          slow-sql-millis: 500
+          merge-sql: true
+          connection-stack-trace-enable: true
+      connection-properties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
+
+mybatis-plus:
+  config-locations: classpath:/mapper/*Mapper.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath:/mybatis/mapper/*Mapper.xml
+logging:
+  file:
+    path: ./logs
+    name: boot-mybatisplus.log
+  level: 
+    root: INFO
+    org:
+      mybatis: debug
+    com:
+      baomidou:
+        mybatisplus: debug
+mybatis:
+  mapper-locations: classpath:/mybatis/mapper/*Mapper.xml

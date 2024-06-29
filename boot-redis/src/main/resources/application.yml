@@ -1,0 +1,12 @@
+server:
+  servlet:
+    context-path: /hello-boot
+  port: 6666
+  
+spring:
+  profiles:
+    active: dev
+loser:
+  cache:
+    enabled: true
+

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout disableAnsi="false" 
+                           pattern="%style{%d{yyyy-MM-dd HH:mm:ss.SSS}}{black} [%style{%t}{bright,blue}] %highlight{%-5level}{FATAL=bg_red, ERROR=red, WARN=yellow, INFO=green} %50.50c:%4L - %msg%n"/>
+<!--
+            <PatternLayout disableAnsi="false" 
+                           pattern="%style{%d{yyyy-MM-dd HH:mm:ss.SSS}}{black} %highlight{%-5level}[%style{%t}{bright,blue}] %style{%class.30c}{bright,yellow}:[%L] %msg%n%throwable"/>
+-->
+        </Console>
+    </Appenders>
+
+    <Loggers>
+        <!-- LOG everything at INFO level -->
+        <Root level="info">
+            <AppenderRef ref="Console"/>
+        </Root>
+    </Loggers>
+
+</Configuration>

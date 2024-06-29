@@ -1,0 +1,15 @@
+spring:
+  redis:
+    host: localhost
+    port: 6379
+    password: deepdata$
+    # Redis 连接超时时间（单位：毫秒）
+    timeout: 5000
+    lettuce:
+      pool:
+        min-idle: 10
+        max-idle: 50
+        max-active: 100
+        max-wait: 1000
+
+        

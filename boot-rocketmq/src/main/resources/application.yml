@@ -1,0 +1,7 @@
+rocketmq:
+  name-server: 47.100.125.240:9876
+  producer:
+    group: default-group
+  consumer:
+    pull-batch-size: 10
+    message-model: clustering    

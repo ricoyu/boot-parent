@@ -1,0 +1,8 @@
+server:
+  servlet:
+    context-path: /security
+    
+spring:
+  security:
+    user:
+      password: 123456

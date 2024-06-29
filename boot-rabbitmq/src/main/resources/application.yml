@@ -1,0 +1,58 @@
+spring:
+  datasource:
+    druid:
+      url: jdbc:mysql://localhost:3306/dcms?serverTimezone=Asia/Shanghai&useSSL=false&allowPublicKeyRetrieval=true&useLegacyDatetimeCode=false&useCompression=true&useUnicode=true&autoReconnect=true&autoReconnectForPools=true&failOverReadOnly=false
+      username: rico
+      password: 123456
+      driver-class-name: com.mysql.jdbc.Driver
+      initial-size: 10
+      max-active: 100
+      min-idle: 4
+      max-wait: 60000
+      pool-prepared-statements: true
+      max-open-prepared-statements: 20
+      validation-query: SELECT 1 FROM DUAL
+      test-while-idle: true
+      test-on-borrow: false
+      test-on-return: false
+      time-between-eviction-runs-millis: 60000
+      min-evictable-idle-time-millis: 300000
+
+      filter:
+        stat:
+          enabled: true
+          db-type: mysql
+          log-slow-sql: true
+          slow-sql-millis: 500
+          merge-sql: true
+          connection-stack-trace-enable: true
+      connection-properties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
+      
+  rabbitmq:
+    host: localhost
+    port: 5672
+    #虚拟主机
+    virtual-host: lord-three
+    username: rico
+    password: 123456
+    connection-timeout: 10000
+    #mandatory=false 不可达消息会被mq broker给删除掉
+    #mandatory=true  MQ会调用我们的 retrunListener 来告诉我们业务系统说该消息不能成功发送.
+    template:
+      mandatory: true
+    #开启消息确认模式
+    publisher-confirms: true
+    #开启消息可达监听
+    publisher-returns: true
+
+mybatis-plus:
+  config-locations: classpath:/mapper/*Mapper.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+logging:
+  file:
+    path: ./logs
+    name: boot-rabbitmq.log
+  level:
+    root: INFO

@@ -1,0 +1,16 @@
+spring:
+  profiles:
+    active: dev
+server:
+  port: 8888
+#---
+#
+#spring:
+#  profiles: dev
+#hello.message: 今天是2020-04-10
+#
+#---
+#
+#spring:
+#  profiles: prod
+#hello.message: 今天是2020-04-10 周五

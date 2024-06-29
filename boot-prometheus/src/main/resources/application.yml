@@ -1,0 +1,23 @@
+server:
+  servlet:
+    context-path: /prome
+spring:
+  profiles:
+    active: dev
+  application:
+    name: boot-prometheus
+
+management:
+  # 可以通过curl -XPOST http://localhost:8080/actuator/shutdown远程关闭微服务
+  endpoint:
+    shutdown:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: *
+        exclude: env, beans
+  metrics:
+    export:
+      simple:
+        enabled: false

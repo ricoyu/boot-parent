@@ -1,0 +1,6 @@
+server:
+  servlet:
+    context-path: /hello-boot
+spring:
+  profiles:
+    active: dev

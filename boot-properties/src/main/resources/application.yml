@@ -1,0 +1,27 @@
+person:
+  name: 三少爷
+  age: 26
+  salary: 35000
+  car:
+    carName: 梅赛德斯-AMG S 63 L
+    carBrand: 奔驰
+  hobbies: 篮球,RAP,打波,大保健
+#  hobbies:
+#    - 篮球
+#    - RAP
+#    - 打波
+#    - 大保健
+  maps:
+    k1: v1
+    k2: v2
+  birthday: 1982-11-09
+  marriage: true
+
+logging:
+  level:
+    org.springframework: debug
+    org.springframework.boot.autoconfigure: ERROR 
+        
+urls: aaa, bbb
+server:
+  port: 6666

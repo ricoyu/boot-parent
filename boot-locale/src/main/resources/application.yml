@@ -1,0 +1,8 @@
+loser:
+  locale:
+    enabled: true
+    
+
+spring:
+  messages:
+    basename: i18n/messages
