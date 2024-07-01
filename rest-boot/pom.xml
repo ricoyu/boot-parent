@@ -40,15 +40,15 @@
             <artifactId>spring-boot-configuration-processor</artifactId>
         </dependency>
 
-        <dependency>
+        <!--<dependency>
             <groupId>com.loserico</groupId>
             <artifactId>loser-spring-boot-starter</artifactId>
-            <version>2.6.2</version>
-        </dependency>
+            <version>17.0.1</version>
+        </dependency>-->
         <dependency>
             <groupId>com.loserico</groupId>
             <artifactId>loser-spring-boot-web-starter</artifactId>
-            <version>2.6.2</version>
+            <version>17.0.1</version>
         </dependency>
 
         <dependency>
@@ -71,6 +71,6 @@
     </dependencies>
 
     <build>
-        <finalName>hello-boot</finalName>
+        <finalName>rest-boot</finalName>
     </build>
 </project>

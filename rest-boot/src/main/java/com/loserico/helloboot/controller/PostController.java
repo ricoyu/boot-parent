@@ -10,10 +10,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 @Slf4j
 @RestController
-@RequestMapping("/learning")
+@RequestMapping("/rest")
 public class PostController {
 
-    @PostMapping("/save")
+    @PostMapping("/")
     public Result post(@RequestBody String payload) {
         log.info("收到提交的数据: {}", payload);
         return Results.success().build();

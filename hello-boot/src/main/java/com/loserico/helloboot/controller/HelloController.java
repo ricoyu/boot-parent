@@ -18,13 +18,13 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @Slf4j
 @RestController
-@RequestMapping("")
+@RequestMapping("/user")
 public class HelloController {
 	
 	@CrossOrigin()
-	@GetMapping("/hello")
+	@GetMapping(value = "/hello")
 	public String hello() throws InterruptedException {
-		return "hi";
+		return "hi 三少爷";
 	}
 
 	@CrossOrigin()

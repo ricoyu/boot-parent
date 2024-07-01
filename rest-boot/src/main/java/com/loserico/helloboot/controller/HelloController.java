@@ -6,8 +6,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import static java.util.concurrent.TimeUnit.*;
-
 /**
  * <p>
  * Copyright: (C), 2020-11-10 16:12
@@ -20,13 +18,12 @@ import static java.util.concurrent.TimeUnit.*;
  */
 @Slf4j
 @RestController
-@RequestMapping("")
+@RequestMapping("/rest")
 public class HelloController {
 	
 	@CrossOrigin()
 	@GetMapping("/hello")
 	public String hello() throws InterruptedException {
-		SECONDS.sleep(3);
-		return "hi";
+		return "hi Rico";
 	}
 }
