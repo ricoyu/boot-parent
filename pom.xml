@@ -62,7 +62,7 @@
         <module>boot-h2</module>
         <module>boot-retry</module>
         <module>boot-tomcat-thread</module>
-        <module>boot-springdata-jpa</module>
+        <module>boot-springdata-jpa</module> 
     </modules>
 
     <properties>
