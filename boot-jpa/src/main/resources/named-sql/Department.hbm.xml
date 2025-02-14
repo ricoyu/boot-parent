@@ -3,7 +3,7 @@
 <hibernate-mapping>
     <sql-query name="all-depts">
         <![CDATA[
-            update dept set department_name="架构组" where id=1;
+            select * from department
     	]]>
     </sql-query>
 </hibernate-mapping>

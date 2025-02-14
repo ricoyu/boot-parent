@@ -3,7 +3,7 @@ spring:
     druid:
       url: jdbc:mysql://localhost:3306/micromall?serverTimezone=Asia/Shanghai&useSSL=false&allowPublicKeyRetrieval=true&useLegacyDatetimeCode=false&useCompression=true&useUnicode=true&autoReconnect=true&autoReconnectForPools=true&failOverReadOnly=false
       username: root
-      password: admin!123456
+      password: qianyu14
       initial-size: 5
       min-idle: 5
       max-active: 20
@@ -19,6 +19,7 @@ spring:
       min-evictable-idle-time-millis: 1800000
       pool-prepared-statements: false
       max-pool-prepared-statement-per-connection-size: -1
+    driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     properties: 
       hibernate:
@@ -42,7 +43,6 @@ spring:
         packagesToScan: com.loserico.jpa.entity
     hibernate:
       ddl-auto: none #配置hibernate不自动执行ddl是在这里, 而不是上面的spring.jpa.properties.hibernate.ddl-auto
-      
   jackson:
     serialization:
       indent_output: true

@@ -6,3 +6,11 @@ spring:
   security:
     user:
       password: 123456
+
+loser:
+  security:
+    auth-center-enabled: true
+    token-encrypted: false
+    login-url: /login
+    pic-code:
+      enabled: false

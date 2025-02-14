@@ -1,0 +1,7 @@
+server:
+  tomcat:
+    max-connections: 30 #最大连接数
+    accept-count: 10    #最大等待连接数
+    threads:
+      max: 20       # 最大线程数
+      min-spare: 10 # 最少线程数

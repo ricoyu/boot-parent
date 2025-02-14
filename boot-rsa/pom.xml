@@ -5,7 +5,7 @@
     <parent>
         <groupId>com.loserico</groupId>
         <artifactId>boot-parent</artifactId>
-        <version>17.0.1</version>
+        <version>17.0.2</version>
     </parent>
     <artifactId>boot-rsa</artifactId>
     <version>${project.parent.version}</version>
@@ -66,7 +66,6 @@
         <dependency>
             <groupId>com.loserico</groupId>
             <artifactId>loser-spring-boot-security-starter</artifactId>
-            <version>2.1</version>
         </dependency>
         
         

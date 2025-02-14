@@ -1,9 +1,6 @@
 package com.loserico.jpa.service;
 
 import com.github.javafaker.Faker;
-import com.loserico.common.lang.utils.EnumUtils;
-import com.loserico.common.lang.utils.ReflectionUtils;
-import com.loserico.common.spring.annotation.PostInitialize;
 import com.loserico.jpa.annotation.RedisListener;
 import com.loserico.jpa.entity.Outbound;
 import com.loserico.orm.dao.EntityOperations;
@@ -42,24 +39,6 @@ public class MockService {
 	private AtomicInteger counter = new AtomicInteger(0);
 	
 	private Faker faker = new Faker();
-
-
-	@PostInitialize
-	public void testNamedSqlQuery() {
-		int i = sqlOperations.executeUpdate("all-depts", null);
-		i = sqlOperations.executeUpdate("all-depts", null);
-		System.out.println(i);
-
-		ExportType preview = ExportType.PREVIEW;
-		Object value = ReflectionUtils.getFieldValue("code", preview);
-		System.out.println(value);
-
-		Enum preview1 = EnumUtils.lookupEnum(ExportType.class, "PREVIEW");
-		Enum anEnum = EnumUtils.lookupEnum(ExportType.class, "PREVIEW", "code");
-		Enum anEnum1 = EnumUtils.lookupEnum(ExportType.class, 1);
-		Enum anEnum2 = EnumUtils.lookupEnum(ExportType.class, 1, "code");
-		System.out.println(ExportType.PREVIEW.ordinal());
-	}
 
 	public static enum ExportType {
 		/** 预览 */

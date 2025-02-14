@@ -10,7 +10,7 @@
     <groupId>com.loserico</groupId>
     <artifactId>boot-parent</artifactId>
     <packaging>pom</packaging>
-    <version>17.0.1</version>
+    <version>17.0.2</version>
     <name>boot-parent</name>
     <description>Parent project for Spring Boot</description>
 
@@ -25,6 +25,7 @@
         <module>boot-javaee</module>
         <module>boot-jdbc</module>
         <module>boot-jpa</module>
+        <module>boot-war</module>
         <module>boot-tidb</module>
         <module>boot-mybatis</module>
         <module>boot-mybatisplus</module>
@@ -59,6 +60,9 @@
         <module>boot-async</module>
         <module>boot-spring-data-redis</module>
         <module>boot-h2</module>
+        <module>boot-retry</module>
+        <module>boot-tomcat-thread</module>
+        <module>boot-springdata-jpa</module>
     </modules>
 
     <properties>
@@ -107,82 +111,82 @@
             <dependency>
                 <groupId>com.loserico</groupId>
                 <artifactId>loser-spring-boot-security-starter</artifactId>
-                <version>17.0.1</version>
+                <version>17.0.2</version>
             </dependency>
             <dependency>
                 <groupId>com.loserico</groupId>
                 <artifactId>loser-spring-boot-starter</artifactId>
-                <version>17.0.1</version>
+                <version>17.0.2</version>
             </dependency>
             <dependency>
                 <groupId>com.loserico</groupId>
                 <artifactId>loser-spring-boot-web-starter</artifactId>
-                <version>17.0.1</version>
+                <version>17.0.2</version>
             </dependency>
             <dependency>
                 <groupId>com.loserico</groupId>
                 <artifactId>loser-spring-boot</artifactId>
-                <version>17.0.1</version>
+                <version>17.0.2</version>
             </dependency>
             <dependency>
                 <groupId>com.loserico</groupId>
                 <artifactId>commons-lang</artifactId>
-                <version>17.0.1</version>
+                <version>17.0.2</version>
             </dependency>
             <dependency>
                 <groupId>com.loserico</groupId>
                 <artifactId>commons-spring</artifactId>
-                <version>17.0.1</version>
+                <version>17.0.2</version>
             </dependency>
             <dependency>
                 <groupId>com.loserico</groupId>
                 <artifactId>loser-orm</artifactId>
-                <version>17.0.1</version>
+                <version>17.0.2</version>
             </dependency>
             <dependency>
                 <groupId>com.loserico</groupId>
                 <artifactId>loser-cache</artifactId>
-                <version>17.0.1</version>
+                <version>17.0.2</version>
             </dependency>
             <dependency>
                 <groupId>com.loserico</groupId>
                 <artifactId>loser-json</artifactId>
-                <version>17.0.1</version>
+                <version>17.0.2</version>
             </dependency>
             <dependency>
                 <groupId>com.loserico</groupId>
                 <artifactId>loser-codec</artifactId>
-                <version>17.0.1</version>
+                <version>17.0.2</version>
             </dependency>
             <dependency>
                 <groupId>com.loserico</groupId>
                 <artifactId>loser-networking</artifactId>
-                <version>17.0.1</version>
+                <version>17.0.2</version>
             </dependency>
             <dependency>
                 <groupId>com.loserico</groupId>
                 <artifactId>loser-web</artifactId>
-                <version>17.0.1</version>
+                <version>17.0.2</version>
             </dependency>
             <dependency>
                 <groupId>com.loserico</groupId>
                 <artifactId>loser-validation</artifactId>
-                <version>17.0.1</version>
+                <version>17.0.2</version>
             </dependency>
             <dependency>
                 <groupId>com.loserico</groupId>
                 <artifactId>loser-workbook</artifactId>
-                <version>17.0.1</version>
+                <version>17.0.2</version>
             </dependency>
             <dependency>
                 <groupId>com.loserico</groupId>
                 <artifactId>loser-token-parser</artifactId>
-                <version>17.0.1</version>
+                <version>17.0.2</version>
             </dependency>
             <dependency>
                 <groupId>com.loserico</groupId>
                 <artifactId>loser-messaging</artifactId>
-                <version>17.0.1</version>
+                <version>17.0.2</version>
             </dependency>
 
             <dependency>
@@ -198,13 +202,13 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>3.2.4</version>
-                <!--<executions>
+                <executions>
                     <execution>
                         <goals>
                             <goal>repackage</goal>
                         </goals>
                     </execution>
-                </executions>-->
+                </executions>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
