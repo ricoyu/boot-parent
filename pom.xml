@@ -63,6 +63,7 @@
         <module>boot-retry</module>
         <module>boot-tomcat-thread</module>
         <module>boot-springdata-jpa</module>
+        <module>boot-mail</module>
     </modules>
 
     <properties>
