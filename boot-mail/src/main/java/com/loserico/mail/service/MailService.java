@@ -18,8 +18,8 @@ public class MailService {
 		SimpleMailMessage message = new SimpleMailMessage();
 		message.setFrom("yuxuehua@rzhrt.com.cn");
 		message.setTo("ricoyu_521@hotmail.com");
-		message.setSubject("这次来自三少爷的测试邮件");
-		message.setText("哥, 你太帅了!");
+		message.setSubject("OA审批流催办邮件");
+		message.setText("浦佳栋提醒您审批加班申请");
 
 		mailSender.send(message);
 		System.out.println("发送成功");
