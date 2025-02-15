@@ -15,10 +15,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @version 1.0
  */
 @SpringBootApplication
-public class HelloBootApplication {
-	
+public class TecentMailApplication {
+
 	public static void main(String[] args) {
-		SpringApplication.run(HelloBootApplication.class, args);
+		SpringApplication.run(TecentMailApplication.class, args);
 	}
 	
 }

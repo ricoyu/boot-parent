@@ -2,13 +2,16 @@ spring:
   mail:
 #    host: smtp.163.com
     host: smtp.exmail.qq.com
-#    username: ricoyu_521@163.com
     username: yuxuehua@rzhrt.com.cn
-    password: F6JiGwNz45yWcgPr
+    password: uKug3uENj7DPZvk5
+#    protocol: smtp
+#    port: 465
+#    username: ricoyu_521@163.com
     properties:
       mail:
         smtp:
           auth: true
-          starttls:
-            enabled: true
-            required: true
+          socketFactory:
+            class: javax.net.ssl.SSLSocketFactory
+            fallback: false
+            port: 465
